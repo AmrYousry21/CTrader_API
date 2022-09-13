@@ -29,7 +29,8 @@ namespace Web_API_Demo.Controllers
         [Route("login")]
         public ActionResult Login([FromBody] User user)
         {
-            string connectionString = Environment.GetEnvironmentVariable("MyConn");
+            //string connectionString = Environment.GetEnvironmentVariable("MyConn");
+            string connectionString = "Server=tcp:ctraderwebapidatabase.database.windows.net,1433;Initial Catalog=CTrader;Persist Security Info=False;User ID=amryousry;Password=Opshacomp123@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
