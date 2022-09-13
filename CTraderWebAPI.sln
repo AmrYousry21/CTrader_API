@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTraderWebAPI", "CTraderWebAPI.csproj", "{743ED169-DD2B-42EC-9551-EC4A1EBC98E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{743ED169-DD2B-42EC-9551-EC4A1EBC98E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743ED169-DD2B-42EC-9551-EC4A1EBC98E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743ED169-DD2B-42EC-9551-EC4A1EBC98E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743ED169-DD2B-42EC-9551-EC4A1EBC98E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72721B25-3C0C-426B-8189-D919516E1BCF}
+	EndGlobalSection
+EndGlobal

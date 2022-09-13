@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RaRaYZ1DD7bR2EFn+OXBY8ZyI47il8hzO9JtzEbRnTGS5eoLGU9iE6O/NRt2C7VkVQ6nnl7DAYIc/8aWOhzUIA==",
+  "dgSpecHash": "3dc0biRFJxNKq9JDLB8mX6/Objd828fhlrHLzTScJvfXQdVGlDuoCD0aRfaO5c7isMfY1EYekpGMhaFiTZoLtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amryo\\Repos\\CTrader_WebAPI_Project\\Web API Demo\\CTraderWebAPI.csproj",
+  "projectFilePath": "C:\\Users\\amryo\\Repos\\Ctrader_Web_API\\CTraderWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amryo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.8\\microsoft.aspnetcore.authentication.jwtbearer.6.0.8.nupkg.sha512",
     "C:\\Users\\amryo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -15,7 +15,6 @@
     "C:\\Users\\amryo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\amryo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\amryo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\amryo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\amryo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\amryo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\amryo\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
