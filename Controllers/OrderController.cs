@@ -21,7 +21,7 @@ namespace Web_API_Demo.Controllers
         [Authorize]
         public IActionResult GetALLOrders()
         {
-            string connectionString = this.Configuration.GetConnectionString("MyConn");
+            string connectionString = Environment.GetEnvironmentVariable("MyConn");
 
             List<Models.Orders> orders = new List<Models.Orders>();
             using (SqlConnection conn = new SqlConnection(connectionString))

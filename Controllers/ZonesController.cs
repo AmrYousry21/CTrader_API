@@ -29,7 +29,7 @@ namespace CTraderWebAPI.Controllers
         [Authorize]
         public IActionResult GetALLZones()
         {
-            string connectionString = this.Configuration.GetConnectionString("MyConn");
+            string connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
             List<Zones> zones = new List<Zones>();
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -70,7 +70,7 @@ namespace CTraderWebAPI.Controllers
         [HttpPost]
         public void AddNewZone([FromBody] Zones zone)
         {
-            string connectionString = this.Configuration.GetConnectionString("MyConn");
+            string connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 string commandText = $"INSERT INTO indecision_candles (TimeS, ZoneType, ZoneStatus) VALUES ('{DateTime.Now}', '{zone.Zonetype}', {(zone.ZoneStatus ? 1 : 0)})";
@@ -90,7 +90,7 @@ namespace CTraderWebAPI.Controllers
         public void Delete(int id)
         {
 
-            string connectionString = this.Configuration.GetConnectionString("MyConn");
+            string connectionString = Environment.GetEnvironmentVariable("MyConn");
             
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -116,7 +116,7 @@ namespace CTraderWebAPI.Controllers
 
         public void Update(int id, [FromBody] Zones zone)
         {
-            string connectionString = this.Configuration.GetConnectionString("MyConn");
+            string connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -135,7 +135,7 @@ namespace CTraderWebAPI.Controllers
         public IActionResult GetZone(int ID)
         {
             Zones zone = new Zones();
-            string connectionString = this.Configuration.GetConnectionString("MyConn");
+            string connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
