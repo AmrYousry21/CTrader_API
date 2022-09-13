@@ -82,7 +82,7 @@ namespace Web_API_Demo.Controllers
         [Route("register")]
         public void InsertNewUser([FromBody] User user)
         {
-            string connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
+            string connectionString = Environment.GetEnvironmentVariable("MyConn");
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();

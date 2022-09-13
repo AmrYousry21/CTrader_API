@@ -5,6 +5,9 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var configurationBuilder = new ConfigurationBuilder().AddEnvironmentVariables();
+
 var Configuration = builder.Configuration;
 // Add services to the container.
 
@@ -30,7 +33,8 @@ builder.Services.AddAuthentication(x =>
         ValidAudience = Configuration["JWT:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(Key)
     };
-});  
+});
+builder.Configuration.AddConfiguration(configurationBuilder.Build());
 
 var app = builder.Build();
 
